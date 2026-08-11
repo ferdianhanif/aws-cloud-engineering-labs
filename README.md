@@ -1,6 +1,6 @@
 # AWS Cloud Security & Infrastructure Labs
 
-This repository is a personal collection of hands-on labs documenting my learning journey and practical exploration in Cloud Engineering and AWS infrastructure.
+This repository is a personal collection of hands-on labs documenting *my learning journey* and practical exploration in Cloud Engineering and AWS infrastructure.
 
 The projects here focus on core cloud architectures, network security isolation, and system administration best practices.
 
