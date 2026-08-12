@@ -16,6 +16,7 @@ The projects here focus on core cloud architectures, network security isolation,
 | 04 | Layered IP Troubleshooting Commands | EC2, Linux CLI | OSI Layer 3/4/7 Diagnostics (ping, traceroute, netstat, telnet, curl) | [Explore Lab 04](./04-ip-troubleshooting-commands) |
 | 05 | Troubleshooting a Network Issue | EC2, VPC, HTTPD | Daemon Service Initialization, Security Group Inbound Port 80 Scoping | [Explore Lab 05](./05-troubleshooting-network-issue) |
 | 06 | Custom IPv4 Subnetting & Subnet Allocation | VPC, Subnets, RFC 1918 | Subnetting Math (VLSM /18 & /26), AWS 5 Reserved IP Allocation | [Explore Lab 06](./06-create-subnets-in-vpc) |
+| 07 | Complete Routable VPC Infrastructure | VPC, IGW, NACL, SG | Top-Down VPC Architecture, IGW Routing (0.0.0.0/0), Internet Ping Test | [Explore Lab 07](./07-networking-resources-vpc) |
 
 ---
 
