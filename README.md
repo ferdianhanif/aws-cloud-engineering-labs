@@ -17,7 +17,8 @@ The projects here focus on core cloud architectures, network security isolation,
 | 05 | Troubleshooting a Network Issue | EC2, VPC, HTTPD | Daemon Service Initialization, Security Group Inbound Port 80 Scoping | [Explore Lab 05](./05-troubleshooting-network-issue) |
 | 06 | Custom IPv4 Subnetting & Subnet Allocation | VPC, Subnets, RFC 1918 | Subnetting Math (VLSM /18 & /26), AWS 5 Reserved IP Allocation | [Explore Lab 06](./06-create-subnets-in-vpc) |
 | 07 | Complete Routable VPC Infrastructure | VPC, IGW, NACL, SG | Top-Down VPC Architecture, IGW Routing (0.0.0.0/0), Internet Ping Test | [Explore Lab 07](./07-networking-resources-vpc) |
-
+| 08 | Multi-AZ VPC & Web Server Provisioning | VPC, NAT Gateway, Multi-AZ | Multi-AZ Subnet Allocation, NAT Gateway, User Data Troubleshooting | [Explore Lab 08](./08-build-vpc-launch-web-server) |
+| 09 | Relational Database DDL Operations | MySQL, DDL, SSM | CREATE/ALTER/DROP Table Operations, Schema Refactoring, SQL Shell | [Explore Lab 09](./09-database-table-operations) |
 ---
 
 ## Environment & Tooling
