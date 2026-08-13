@@ -22,6 +22,9 @@ The projects here focus on core cloud architectures, network security isolation,
 | 10 | Relational Database DML Operations | MySQL, DML, SQL Dump | INSERT/UPDATE/DELETE Statement Operations, Disaster Recovery SQL Import | [Explore Lab 10](./10-dml-insert-update-delete-data) |
 | 11 | Relational Data Querying (DQL) | MySQL, DQL, Aggregation | SELECT, COUNT(), AS Aliasing, ORDER BY DESC, Compound WHERE/AND Filters | [Explore Lab 11](./11-selecting-data-from-a-database) |
 | 12 | Relational Conditional Filtering | MySQL, DQL, Pattern Match | BETWEEN Range, LIKE Wildcard (%), SUM() Aggregation, LOWER() String Function | [Explore Lab 12](./12-performing-a-conditional-search) |
+| 13 | Built-In SQL Database Functions | MySQL, Aggregates, Strings | SUM/AVG/MAX/MIN/COUNT, SUBSTRING_INDEX Tokenization, LENGTH, TRIM, DISTINCT | [Explore Lab 13](./13-working-with-functions) |
+| 14 | Advanced Grouping & Window Functions | MySQL, Window Functions | GROUP BY Aggregation, OVER(PARTITION BY), Running Total, RANK() Windowing | [Explore Lab 14](./14-organizing-data) |
+
 
 ---
 
