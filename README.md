@@ -19,6 +19,10 @@ The projects here focus on core cloud architectures, network security isolation,
 | 07 | Complete Routable VPC Infrastructure | VPC, IGW, NACL, SG | Top-Down VPC Architecture, IGW Routing (0.0.0.0/0), Internet Ping Test | [Explore Lab 07](./07-networking-resources-vpc) |
 | 08 | Multi-AZ VPC & Web Server Provisioning | VPC, NAT Gateway, Multi-AZ | Multi-AZ Subnet Allocation, NAT Gateway, User Data Troubleshooting | [Explore Lab 08](./08-build-vpc-launch-web-server) |
 | 09 | Relational Database DDL Operations | MySQL, DDL, SSM | CREATE/ALTER/DROP Table Operations, Schema Refactoring, SQL Shell | [Explore Lab 09](./09-database-table-operations) |
+| 10 | Relational Database DML Operations | MySQL, DML, SQL Dump | INSERT/UPDATE/DELETE Statement Operations, Disaster Recovery SQL Import | [Explore Lab 10](./10-dml-insert-update-delete-data) |
+| 11 | Relational Data Querying (DQL) | MySQL, DQL, Aggregation | SELECT, COUNT(), AS Aliasing, ORDER BY DESC, Compound WHERE/AND Filters | [Explore Lab 11](./11-selecting-data-from-a-database) |
+| 12 | Relational Conditional Filtering | MySQL, DQL, Pattern Match | BETWEEN Range, LIKE Wildcard (%), SUM() Aggregation, LOWER() String Function | [Explore Lab 12](./12-performing-a-conditional-search) |
+
 ---
 
 ## Environment & Tooling
