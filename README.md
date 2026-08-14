@@ -24,6 +24,8 @@ The projects here focus on core cloud architectures, network security isolation,
 | 12 | Relational Conditional Filtering | MySQL, DQL, Pattern Match | BETWEEN Range, LIKE Wildcard (%), SUM() Aggregation, LOWER() String Function | [Explore Lab 12](./12-performing-a-conditional-search) |
 | 13 | Built-In SQL Database Functions | MySQL, Aggregates, Strings | SUM/AVG/MAX/MIN/COUNT, SUBSTRING_INDEX Tokenization, LENGTH, TRIM, DISTINCT | [Explore Lab 13](./13-working-with-functions) |
 | 14 | Advanced Grouping & Window Functions | MySQL, Window Functions | GROUP BY Aggregation, OVER(PARTITION BY), Running Total, RANK() Windowing | [Explore Lab 14](./14-organizing-data) |
+| 15 | Managed Multi-AZ RDS & App Integration | Amazon RDS, MySQL, Multi-AZ | Multi-AZ DB Subnet Group, SG-to-SG Inbound Filtering (Port 3306), PHP App | [Explore Lab 15](./15-build-db-server-interact-with-app) |
+| 16 | Enterprise Amazon Aurora DB Cluster | Amazon Aurora, MySQL, RDS | Aurora Cluster Provisioning, Writer Endpoint, Decoupled Storage, MariaDB | [Explore Lab 16](./16-introduction-to-amazon-aurora) |
 
 
 ---
