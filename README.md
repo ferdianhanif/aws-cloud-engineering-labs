@@ -26,7 +26,8 @@ The projects here focus on core cloud architectures, network security isolation,
 | 14 | Advanced Grouping & Window Functions | MySQL, Window Functions | GROUP BY Aggregation, OVER(PARTITION BY), Running Total, RANK() Windowing | [Explore Lab 14](./14-organizing-data) |
 | 15 | Managed Multi-AZ RDS & App Integration | Amazon RDS, MySQL, Multi-AZ | Multi-AZ DB Subnet Group, SG-to-SG Inbound Filtering (Port 3306), PHP App | [Explore Lab 15](./15-build-db-server-interact-with-app) |
 | 16 | Enterprise Amazon Aurora DB Cluster | Amazon Aurora, MySQL, RDS | Aurora Cluster Provisioning, Writer Endpoint, Decoupled Storage, MariaDB | [Explore Lab 16](./16-introduction-to-amazon-aurora) |
-
+| 17 | Serverless NoSQL Document & Key-Value | Amazon DynamoDB, NoSQL | Composite Keys, Schemaless Data, Item Mutation, Query vs. Scan Performance | [Explore Lab 17](./17-introduction-to-amazon-dynamodb) |
+| 18 | Relational Schema & Inner Join Integration | Amazon RDS, MySQL 8.0, Termius | Single-AZ RDS, Client Auth Upgrade, Multi-Table DDL/DML, INNER JOIN Analytics | [Explore Lab 18](./18-challenge-lab-build-db-server-interact-with-db) |
 
 ---
 
