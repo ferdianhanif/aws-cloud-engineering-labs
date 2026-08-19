@@ -1,14 +1,14 @@
-# AWS Cloud Engineering & Infrastructure Portfolio
+# AWS Cloud Engineering & Infrastructure Labs
 
-This repository documents hands-on cloud engineering implementations, Linux system administration, database management, and cloud architecture best practices on **Amazon Web Services (AWS)**.
+Hands-on cloud engineering labs, Linux administration, database management, and architecture notes built on Amazon Web Services (AWS).
 
-The projects here demonstrate practical competence across four core technical domains: Cloud Compute Infrastructure, VPC Networking, Database Systems & SQL Analytics, and Security Hardening & Compliance.
+The labs cover four main technical areas: Cloud Compute, VPC Networking, Database Systems & SQL, and Security Hardening.
 
 ---
 
-## 🏛️ Portfolio Structure & Core Technical Pillars
+## Portfolio Structure & Core Technical Pillars
 
-### 🔷 Pillar 1: Cloud Compute & Infrastructure Engineering
+### Pillar 1: Cloud Compute & Infrastructure Engineering
 | # | Lab Title | AWS Services | Key Technical Focus | Documentation |
 |---|---|---|---|---|
 | 01 | EC2 Provisioning & Workload Resilience | EC2, EBS, User Data | User Data Automation, Vertical Scaling, Termination Protection | [Explore Lab 01](./01-ec2-webserver-management) |
@@ -17,7 +17,7 @@ The projects here demonstrate practical competence across four core technical do
 
 ---
 
-### 🔷 Pillar 2: VPC Networking & Linux Systems Administration
+### Pillar 2: VPC Networking & Linux Systems Administration
 | # | Lab Title | AWS Services | Key Technical Focus | Documentation |
 |---|---|---|---|---|
 | 04 | Layered IP Troubleshooting Commands | EC2, Linux CLI | OSI Layer 3/4/7 Diagnostics (ping, traceroute, netstat, telnet, curl) | [Explore Lab 04](./04-ip-troubleshooting-commands) |
@@ -28,7 +28,7 @@ The projects here demonstrate practical competence across four core technical do
 
 ---
 
-### 🔷 Pillar 3: Database Systems Engineering & SQL Analytics
+### Pillar 3: Database Systems Engineering & SQL Analytics
 | # | Lab Title | AWS Services | Key Technical Focus | Documentation |
 |---|---|---|---|---|
 | 09 | Relational Database DDL Operations | MySQL, DDL, SSM | CREATE/ALTER/DROP Table Operations, Schema Refactoring, SQL Shell | [Explore Lab 09](./09-database-table-operations) |
@@ -44,20 +44,19 @@ The projects here demonstrate practical competence across four core technical do
 
 ---
 
-### 🔷 Pillar 4: Systems Hardening, DevSecOps & Security Compliance
+### Pillar 4: Systems Hardening, DevSecOps & Security Compliance
 | # | Lab Title | AWS Services | Key Technical Focus | Documentation |
 |---|---|---|---|---|
 | 19 | Automated Security & Vulnerability Scanning | Amazon Inspector, AWS Lambda | Continuous Vulnerability Scanning, CVE-2023-32681 Remediation, Closed Verification | [Explore Lab 19](./19-amazon-inspector-vulnerability-assessment-remediation) |
 | 20 | Automated Systems Hardening & Patching | AWS Systems Manager, Patch Manager | Default & Custom Patch Baselines, Auto-Approval Rules, Patch Groups, Compliance | [Explore Lab 20](./20-systems-hardening-patch-manager-aws-systems-manager) |
-| 21 | Data Protection Using Encryption | AWS KMS, AWS Encryption CLI, EC2 | Symmetric Key Management, Envelope Encryption, Plaintext to Ciphertext, Integrity Verification | [Explore Lab 21](./21-data-protection-using-encryption) |
 
 ---
 
-## 🛠️ Environment & Technical Tooling
+## Environment & Tooling
 
-- **Cloud Platform**: Amazon Web Services (AWS)
-- **Networking**: Virtual Private Cloud (VPC), Subnets, Route Tables, Internet Gateways, NAT Gateways
-- **Compute & OS**: Amazon EC2, Amazon Linux 2023, Ubuntu, Apache (`httpd`), Nginx
-- **Databases**: Amazon RDS (MySQL), Amazon Aurora Cluster, Amazon DynamoDB (NoSQL)
-- **Security & Compliance**: AWS KMS, Amazon Inspector, AWS Systems Manager (SSM Patch Manager)
-- **Tooling & Diagnostics**: Bash Shell, Termius SSH, AWS Encryption CLI, MySQL Client, `ping`, `traceroute`, `netstat`, `curl`
+- Cloud Platform: Amazon Web Services (AWS)
+- Networking: Virtual Private Cloud (VPC), Subnets, Route Tables, Internet Gateways, NAT Gateways
+- Compute & OS: Amazon EC2, Amazon Linux 2023, Ubuntu, Apache (`httpd`), Nginx
+- Databases: Amazon RDS (MySQL), Amazon Aurora Cluster, Amazon DynamoDB (NoSQL)
+- Security & Compliance: AWS KMS, Amazon Inspector, AWS Systems Manager (SSM Patch Manager)
+- Tooling & Diagnostics: Bash Shell, Termius SSH, AWS Encryption CLI, MySQL Client, `ping`, `traceroute`, `netstat`, `curl`
