@@ -49,6 +49,11 @@ The labs cover four main technical areas: Cloud Compute, VPC Networking, Databas
 |---|---|---|---|---|
 | 19 | Automated Security & Vulnerability Scanning | Amazon Inspector, AWS Lambda | Continuous Vulnerability Scanning, CVE-2023-32681 Remediation, Closed Verification | [Explore Lab 19](./19-amazon-inspector-vulnerability-assessment-remediation) |
 | 20 | Automated Systems Hardening & Patching | AWS Systems Manager, Patch Manager | Default & Custom Patch Baselines, Auto-Approval Rules, Patch Groups, Compliance | [Explore Lab 20](./20-systems-hardening-patch-manager-aws-systems-manager) |
+| 21 | Data Protection Using Encryption | AWS KMS, AWS Encryption CLI, EC2 | Symmetric Key Management, Envelope Encryption, Plaintext to Ciphertext, Integrity Verification | [Explore Lab 21](./21-data-protection-using-encryption) |
+| 22 | IAM Users, Groups & Policy Controls | AWS IAM, S3, EC2 | Custom Password Policy, AWS Managed & Customer Inline Policies, Access Testing | [Explore Lab 22](./22-introduction-to-iam-user-groups-policies) |
+| 23 | Malware Protection Using AWS Network Firewall | AWS Network Firewall, VPC, EC2 | Suricata IPS Stateful Rules, Layer 7 DPI, Stateless Action Re-routing, Drop Malware URI | [Explore Lab 23](./23-malware-protection-aws-network-firewall) |
+| 24 | EC2 Workload Monitoring & SNS Alerting | Amazon CloudWatch, Amazon SNS, EC2 | Metric Threshold Alarms (>60%), Synthetic Stress Testing, Email Fanout Alerting | [Explore Lab 24](./24-monitoring-ec2-cloudwatch-sns-alarm) |
+| 25 | AWS CLI v2 Setup & IAM Policy Auditing | AWS CLI v2, AWS IAM, Red Hat Linux | Binary Bundle Installation, Access Key Authentication, Programmatic Policy Export | [Explore Lab 25](./25-install-configure-aws-cli) |
 
 ---
 
