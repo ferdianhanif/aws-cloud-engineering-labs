@@ -54,6 +54,8 @@ The labs cover four main technical areas: Cloud Compute, VPC Networking, Databas
 | 23 | Malware Protection Using AWS Network Firewall | AWS Network Firewall, VPC, EC2 | Suricata IPS Stateful Rules, Layer 7 DPI, Stateless Action Re-routing, Drop Malware URI | [Explore Lab 23](./23-malware-protection-aws-network-firewall) |
 | 24 | EC2 Workload Monitoring & SNS Alerting | Amazon CloudWatch, Amazon SNS, EC2 | Metric Threshold Alarms (>60%), Synthetic Stress Testing, Email Fanout Alerting | [Explore Lab 24](./24-monitoring-ec2-cloudwatch-sns-alarm) |
 | 25 | AWS CLI v2 Setup & IAM Policy Auditing | AWS CLI v2, AWS IAM, Red Hat Linux | Binary Bundle Installation, Access Key Authentication, Programmatic Policy Export | [Explore Lab 25](./25-install-configure-aws-cli) |
+| 26 | Centralized Operations & Zero-SSH Management | AWS Systems Manager, Parameter Store | Fleet Manager Inventory, Run Command Deployment, Parameter Store Feature Flags, Session Manager Shell | [Explore Lab 26](./26-systems-manager-fleet-run-command-session-manager) |
+| 27 | S3 Static Website Hosting & Automated Sync | Amazon S3, AWS CLI, IAM | Bucket Provisioning, Block Public Access & ACLs, Static Website Endpoint, Automated Delta Sync | [Explore Lab 27](./27-s3-static-website-hosting-aws-cli) |
 
 ---
 
