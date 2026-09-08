@@ -151,29 +151,3 @@ graph TD
 > **S3 Versioning Billing & Throttling Implications**: While Versioning protects against accidental deletions, unmanaged version accumulation can result in massive billing surprises. Every non-current version and delete marker consumes metadata and storage billing. In production, always pair S3 Versioning with **S3 Lifecycle Rules** (e.g., `NoncurrentVersionExpiration` after 30 days) to permanently delete expired versions and clean up expired object delete markers.
 
 ---
-
-## Master Command Reference
-
-```bash
-# 1. Query attached EBS Volume ID dynamically
-aws ec2 describe-instances --filter 'Name=tag:Name,Values=Processor'   --query 'Reservations[0].Instances[0].BlockDeviceMappings[0].Ebs.{VolumeId:VolumeId}'
-
-# 2. Consistent Snapshot workflow
-aws ec2 stop-instances --instance-ids <INSTANCE_ID>
-aws ec2 wait instance-stopped --instance-id <INSTANCE_ID>
-aws ec2 create-snapshot --volume-id <VOLUME_ID>
-aws ec2 wait snapshot-completed --snapshot-id <SNAPSHOT_ID>
-aws ec2 start-instances --instance-ids <INSTANCE_ID>
-
-# 3. Enable S3 Bucket Versioning
-aws s3api put-bucket-versioning --bucket <BUCKET_NAME> --versioning-configuration Status=Enabled
-
-# 4. S3 Synchronization with Deletion Propagation
-aws s3 sync <LOCAL_DIR> s3://<BUCKET_NAME>/<PREFIX>/ --delete
-
-# 5. Inspect S3 Versions and Delete Markers
-aws s3api list-object-versions --bucket <BUCKET_NAME> --prefix <KEY_PREFIX>
-
-# 6. Retrieve specific object version for disaster recovery
-aws s3api get-object --bucket <BUCKET_NAME> --key <KEY> --version-id <VERSION_ID> <LOCAL_DESTINATION>
-```
