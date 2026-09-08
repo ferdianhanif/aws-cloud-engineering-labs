@@ -183,28 +183,3 @@ graph TD
 > When configuring custom NACLs for public subnets, administrators frequently forget to open outbound ephemeral ports (`1024-65535`). When a client sends a request to port 80, the web server responds on an ephemeral port chosen by the client OS. If outbound ephemeral ports are blocked in the NACL, web traffic will fail even if inbound port 80 is allowed!
 
 ---
-
-## Master Troubleshooting Command Reference
-
-```bash
-# 1. Enable VPC Flow Logs to S3
-aws ec2 create-flow-logs --resource-type VPC --resource-ids <VPC_ID>   --traffic-type ALL --log-destination-type s3 --log-destination arn:aws:s3:::<BUCKET_NAME>
-
-# 2. Audit Route Table for Subnet
-aws ec2 describe-route-tables --filter "Name=association.subnet-id,Values='<SUBNET_ID>'"
-
-# 3. Create Default Internet Route (0.0.0.0/0 -> IGW)
-aws ec2 create-route --route-table-id '<ROUTE_TABLE_ID>' --gateway-id '<IGW_ID>' --destination-cidr-block '0.0.0.0/0'
-
-# 4. Audit Network ACL Rules
-aws ec2 describe-network-acls --filter "Name=association.subnet-id,Values='<SUBNET_ID>'"   --query 'NetworkAcls[*].[NetworkAclId,Entries]'
-
-# 5. Delete Conflicting NACL Rule
-aws ec2 delete-network-acl-entry --network-acl-id '<NACL_ID>' --ingress --rule-number <RULE_NUM>
-
-# 6. Correlate Public IP to Elastic Network Interface (ENI)
-aws ec2 describe-network-interfaces --filters "Name=association.public-ip,Values='<PUBLIC_IP>'"   --query 'NetworkInterfaces[*].[NetworkInterfaceId,Association.PublicIp]'
-
-# 7. Forensic Unix Timestamp Translation
-date -d @<UNIX_TIMESTAMP>
-```
