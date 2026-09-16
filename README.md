@@ -34,6 +34,9 @@ The labs cover four main technical areas: Cloud Compute, VPC Networking, Databas
 | 06 | Custom IPv4 Subnetting & Subnet Allocation | VPC, Subnets, RFC 1918 | Subnetting Math (VLSM /18 & /26), AWS 5 Reserved IP Allocation | [Explore Lab 06](./06-create-subnets-in-vpc) |
 | 07 | Complete Routable VPC Infrastructure | VPC, IGW, NACL, SG | Top-Down VPC Architecture, IGW Routing (0.0.0.0/0), Network Reachability | [Explore Lab 07](./07-networking-resources-vpc) |
 | 08 | Multi-AZ VPC & Web Server Provisioning | VPC, NAT Gateway, Multi-AZ | Multi-AZ Subnet Allocation, NAT Gateway Egress, User Data Bootstrap | [Explore Lab 08](./08-build-vpc-launch-web-server) |
+| 33 | Multi-AZ Disaster Recovery & DNS Failover Routing | Route 53, EC2, SNS, Multi-AZ | Active-Passive Failover, Fast Health Probing (10s), Low TTL (15s) Propagation, Zero-Touch DR | [Explore Lab 33](./33-amazon-route53-failover-routing) |
+| 37 | Custom VPC Infrastructure, Bastion Host & NAT Gateway | VPC, IGW, NAT Gateway, Bastion | Dual-Tier Subnetting (/24 vs /23), Public Route to IGW, Private Route to NAT Gateway, Bastion SSH Jump | [Explore Lab 37](./37-configuring-an-amazon-vpc) |
+| 39 | Multi-Layer VPC Troubleshooting & Flow Logs | VPC, S3, Flow Logs, NACL, IGW | L3 Missing IGW Route Remediation, L4 NACL Deny Rule Purge, S3 Flow Log Forensics, Unix Timestamp Conversion | [Explore Lab 39](./39-troubleshooting-a-vpc-flow-logs) |
 
 ---
 
@@ -50,6 +53,7 @@ The labs cover four main technical areas: Cloud Compute, VPC Networking, Databas
 | 16 | Enterprise Amazon Aurora DB Cluster | Amazon Aurora, MySQL, RDS | Aurora Cluster Provisioning, Writer Endpoint, Decoupled Storage, MariaDB | [Explore Lab 16](./16-introduction-to-amazon-aurora) |
 | 17 | Serverless NoSQL Document & Key-Value | Amazon DynamoDB, NoSQL | Composite Keys, Schemaless Data, Item Mutation, Query vs. Scan Performance | [Explore Lab 17](./17-introduction-to-amazon-dynamodb) |
 | 18 | Relational Schema & Inner Join Integration | Amazon RDS, MySQL 8.0, Termius | Single-AZ RDS, Client Auth Upgrade, Multi-Table DDL/DML, INNER JOIN Analytics | [Explore Lab 18](./18-challenge-lab-build-db-server-interact-with-db) |
+| 36 | Database Decoupling & Migration to Managed RDS | Amazon RDS, MariaDB, SSM, EC2 | Multi-AZ DB Subnet Group, CLI Provisioning, mysqldump SSL Import, Parameter Store Decoupling | [Explore Lab 36](./36-migrating-to-amazon-rds) |
 
 ---
 
@@ -65,13 +69,28 @@ The labs cover four main technical areas: Cloud Compute, VPC Networking, Databas
 | 25 | AWS CLI v2 Setup & IAM Policy Auditing | AWS CLI v2, AWS IAM, Red Hat Linux | Binary Bundle Installation, Access Key Authentication, Programmatic Policy Export | [Explore Lab 25](./25-install-configure-aws-cli) |
 | 26 | Centralized Operations & Zero-SSH Management | AWS Systems Manager, Parameter Store | Fleet Manager Inventory, Run Command Deployment, Parameter Store Feature Flags, Session Manager Shell | [Explore Lab 26](./26-systems-manager-fleet-run-command-session-manager) |
 | 27 | S3 Static Website Hosting & Automated Sync | Amazon S3, AWS CLI, IAM | Bucket Provisioning, Block Public Access & ACLs, Static Website Endpoint, Automated Delta Sync | [Explore Lab 27](./27-s3-static-website-hosting-aws-cli) |
+| 43 | Infrastructure Observability & Continuous Compliance | CloudWatch, EventBridge, AWS Config, SSM, SNS | In-Guest CloudWatch Agent, HTTP 404 Metric Filter & Alarm, EC2 State Change EventBridge Rule, AWS Config Managed Rules (required-tags, ec2-volume-inuse) | [Explore Lab 43](./43-monitoring-infrastructure-cloudwatch-config) |
+| 44 | Cloud Incident Response & Athena Forensics | AWS CloudTrail, Amazon Athena, KMS, EC2, IAM | Multi-Region Trail Audit, Presto SQL Threat Hunting (chaos IAM User Attribution), SSH Password Hardening, SG Remediation | [Explore Lab 44](./44-working-with-aws-cloudtrail-athena-forensics) |
+| 45 | Automated Resource Governance & FinOps Scheduling | AWS CLI, JMESPath, EC2, PHP SDK, Bash | Advanced JMESPath Multi-Tag Querying, Batch Tag Updates, Automated Fleet Scheduling (Stopinator), Tag-or-Terminate Policy Enforcement | [Explore Lab 45](./45-managing-resources-with-tagging) |
+| 46 | Cloud FinOps & Compute Rightsizing | AWS CLI, EC2, Amazon RDS, Pricing Calculator | Decommissioning Monolith, Vertical Downsizing (t3.small to t3.micro), Decoupled DB Connectivity, 50% Compute Cost Reduction | [Explore Lab 46](./46-optimizing-utilization-cost-reduction) |
 
 ---
+
 ### Pillar 5: Serverless Engineering & Event-Driven Automation
 | # | Lab Title | AWS Services | Key Technical Focus | Documentation |
 |---|---|---|---|---|
 | 34 | Automated Serverless Reporting Pipeline | AWS Lambda, EventBridge, SSM, SNS | Lambda Layers (PyMySQL), VPC ENI Access, SSM Secret Management, Scheduled EventBridge Cron, SNS Fan-Out | [Explore Lab 34](./34-working-with-aws-lambda) |
 | 35 | Event-Driven S3 Document Analytics Challenge | AWS Lambda, Amazon S3, Amazon SNS | S3 ObjectCreated Trigger, Python Boto3 Document Parsing, Word Count Tokenization, SNS Alerting | [Explore Lab 35](./35-challenge-aws-lambda-exercise) |
+| 47 | Infrastructure as Code Stack Automation | AWS CloudFormation, S3, EC2, SSM, VPC | Declarative YAML Templates, Dynamic SSM AMI Ingestion, In-Place S3/EC2 Change Set Updates, Reverse-Dependency Teardown | [Explore Lab 47](./47-automating-deployments-with-aws-cloudformation) |
+| 48 | IaC Diagnostics, Drift Detection & Failure Recovery | AWS CloudFormation, EC2, S3, CLI | CLI Failure Recovery (--on-failure DO_NOTHING), Cloud-Init Log RCA, Security Group Drift Detection, Retained S3 Teardown | [Explore Lab 48](./48-troubleshooting-aws-cloudformation-deployments) |
+| 49 | Declarative Isolated VPC & EC2 Challenge | AWS CloudFormation, VPC, Subnet, EC2, SSM | IaC Isolated Private Subnet, Ingress SSH Security Group, Dynamic Parameter Store AMI Lookup | [Explore Lab 49](./49-challenge-cloudformation-vpc-ec2) |
+
+---
+
+### Pillar 6: Machine Learning Operations (MLOps) & AI
+| # | Lab Title | AWS Services | Key Technical Focus | Documentation |
+|---|---|---|---|---|
+| 50 | Managed XGBoost Model Training in SageMaker | Amazon SageMaker AI, S3, JupyterLab | Managed Notebook Instance, Dataset Train/Val/Test Splitting, XGBoost Estimator, S3 Artifact Storage | [Explore Lab 50](./50-sagemaker-training-machine-learning-model) |
 
 ---
 
