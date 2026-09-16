@@ -4,6 +4,8 @@ This lab project explores the fundamental differences between dynamically assign
 
 ---
 
+![Lab Architecture Diagram](images/00_lab_architecture_diagram.png)
+
 ## Scenario & Problem Statement
 
 ### Customer Issue Statement

@@ -4,7 +4,9 @@ This lab project explores VPC IP addressing mechanisms, troubleshooting internet
 
 ---
 
-## Problem Scenario & Root Cause Analysis
+## Scenario & Architecture Overview
+
+![Lab Architecture Diagram](images/00_lab_architecture_diagram.png)
 
 ### Customer Issue Statement
 A cloud infrastructure setup within a single VPC (`10.0.0.0/16`) contains two Amazon EC2 instances (`instance A` and `instance B`) deployed in the same public subnet. Despite having identical VPC configurations:

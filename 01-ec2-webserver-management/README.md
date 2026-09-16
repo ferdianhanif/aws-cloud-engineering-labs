@@ -17,6 +17,9 @@ A business application requires deploying a web server on AWS compute infrastruc
 
 ## Architecture Overview
 
+![Lab Architecture Diagram](images/00_lab_architecture_diagram.png)
+
+
 ```
                      +---------------------------------------+
                      |         Internet / Public Client       |

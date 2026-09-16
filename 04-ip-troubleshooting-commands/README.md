@@ -4,6 +4,8 @@ This lab project documents practical network diagnostics across OSI Layers 3, 4,
 
 ---
 
+![Lab Architecture Diagram](images/00_lab_architecture_diagram.png)
+
 ## Scenario & Problem Statement
 
 ### Requirement Overview
